@@ -2,14 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Dock } from "@/components/ui/dock";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { MainDock } from "@/components/dock";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,8 +16,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "SKre — Portfolio",
-    template: "%s — SKre",
+    default: "skre/dev — Portfolio",
+    template: "%s — skre/dev",
   },
   description: "The personal portfol io from skredev",
 };
@@ -38,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative flex min-h-screen w-full flex-col overflow-x-hidden scroll-smooth bg-background antialiased`}
       >
           <ThemeProvider
             attribute="class"
