@@ -16,7 +16,7 @@ export function Footer() {
   }, [theme]);
 
   return (
-    <BlurFade delay={0.1 * 4} yOffset={0} inView>
+    <BlurFade delay={0.1 * 6} yOffset={0} inView>
       <div
         className="flex flex-col justify-center antialiased overflow-hidden relative border border-dark-300 rounded-xl mb-5 z-50"
         id="footer"
