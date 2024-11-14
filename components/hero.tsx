@@ -18,7 +18,7 @@ export function Hero() {
   return (
     <section id="hero">
       <Spotlight className="-top-16 left-1/3" fill="white" />
-      <div className="relative flex flex-col justify-center items-center mt-20 min-w-[80%] min-h-[40rem] px-6 text-center md:px-8">
+      <div className="relative flex flex-col justify-center items-center mt-28 min-w-[80%] min-h-[40rem] px-6 text-center md:px-8">
         <Particles
           className="absolute inset-0"
           quantity={120}
@@ -46,7 +46,7 @@ export function Hero() {
         </BlurFade>
         <BlurFade delay={0.1 * 3} yOffset={-6} inView>
           <p className="mt-6 text-md tracking-tight text-zinc-400 md:text-lg lg:text-xl">
-            Hi, I'm Samuel, I create creative prototypes to eventually release
+            Hi, I'm Samuel, I develop creative prototypes to eventually release
             <br className="block" />
             visually stunning and highly functional web applications.
           </p>

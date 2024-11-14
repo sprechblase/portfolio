@@ -25,7 +25,7 @@ export function MainDock() {
     <section id="dock" className="fixed left-1/2 transform -translate-x-1/2 z-50">
       <BlurFade delay={0.1 * 3} yOffset={-6} inView>
         <TooltipProvider>
-          <Dock direction="middle" className="bg-background">
+          <Dock direction="middle" className="backdrop-blur-xl bg-white/90 dark:bg-black/90">
             <DockIcon>
               <Tooltip>
                 <TooltipTrigger asChild>

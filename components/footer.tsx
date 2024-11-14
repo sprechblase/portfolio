@@ -34,56 +34,14 @@ export function Footer() {
           </h1>
         </div>
 
-        <div className="mt-16 p-8 border-t border-dark-200 dark:border-white/10 flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+        <div className="p-8 pt-6 flex flex-col md:flex-row justify-end gap-8 md:gap-0">
           <div className="space-y-2">
-            <h3 className="text-lg font-bold relative z-10">Samuel Krebs</h3>
+            <h3 className="text-4xl font-bold relative z-10">
+              Samuel <br /> Krebs.
+            </h3>
             <p className="text-md text-dark-200/70 dark:text-stone-200/70 relative z-10">
-              &copy; 2024 | All rights reserved.
+              &copy; 2024 | All rights reserved
             </p>
-          </div>
-
-          <div className="flex justify-between gap-0 sm:gap-16">
-            <ul className="space-y-2 relative z-10 text-sm sm:text-base">
-              <li className="text-base sm:text-lg font-semibold">Navigate</li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="#projects">Projects</Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="#contact">Contact</Link>
-              </li>
-            </ul>
-
-            <ul className="space-y-2 relative z-10 text-sm sm:text-base">
-              <li className="text-lg font-semibold">Projects</li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/skredev/docsframe"
-                  target="_blank"
-                >
-                  Docsframe
-                </Link>
-              </li>
-            </ul>
-
-            <ul className="space-y-2 relative z-10 text-sm sm:text-base">
-              <li className="text-lg font-semibold">Socials</li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://www.linkedin.com/in/samuelkrebs/"
-                  target="_blank"
-                >
-                  LinkedIn
-                </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="https://github.com/skredev" target="_blank">
-                  Github
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
         <BorderBeam
