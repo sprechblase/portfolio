@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <BlurFade delay={0.1 * 4} yOffset={0} inView>
       <div
-        className="flex flex-col justify-center antialiased overflow-hidden relative border border-dark-300 rounded-xl mb-5 min-w-[70rem] z-50"
+        className="flex flex-col justify-center antialiased overflow-hidden relative border border-dark-300 rounded-xl mb-5 z-50"
         id="footer"
       >
         <div className="space-y-8 p-10">
