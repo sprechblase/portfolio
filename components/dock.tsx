@@ -22,7 +22,7 @@ import BlurFade from "./ui/blur-fade";
 
 export function MainDock() {
   return (
-    <section id="dock" className="fixed left-1/2 transform -translate-x-1/2">
+    <section id="dock" className="fixed left-1/2 transform -translate-x-1/2 z-50">
       <BlurFade delay={0.1 * 3} yOffset={-6} inView>
         <TooltipProvider>
           <Dock direction="middle" className="bg-background">
