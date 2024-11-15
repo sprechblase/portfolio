@@ -13,9 +13,9 @@ export function Skills() {
         </BlurFade>
         <BlurFade delay={0.1 * 2} yOffset={0} inView>
           <span className="text-sm min-[430px]:text-base max-w-lg md:max-w-3xl text-dark-200/70 dark:text-stone-200/70">
-            I'm all about using modern tools and tech that let me build really
-            cool and useful stuff! Here are some of my go-to technologies I work
-            with <u>the most</u>.
+            I{"'"}m all about using modern tools and tech that let me build
+            really cool and useful stuff! Here are some of my go-to technologies
+            I work with <u>the most</u>.
           </span>
         </BlurFade>
       </div>
