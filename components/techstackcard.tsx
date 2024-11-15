@@ -13,7 +13,7 @@ export const TechStackCard: FC<TechStackCardProp> = ({
   bgColor,
 }) => {
   return (
-    <div className="flex flex-1 gap-5 p-3 rounded-xl border border-[#FAFAFA] bg-[#FAFAFA] hover:bg-[#F2F2F2] dark:border-[#1a1a1a] dark:bg-[#0b0b0c] dark:hover:bg-[#0d0d0e] transition-colors duration-200">
+    <div className="flex flex-1 gap-5 p-3 rounded-xl border border-[#FAFAFA] bg-[#FAFAFA] hover:bg-[#F2F2F2] dark:border-[#1a1a1a] dark:bg-[#0b0b0c] dark:hover:bg-[#0e0e0f] transition-colors duration-200">
       <div className={`p-3 ${bgColor} rounded-xl w-fit`}>
         <Image
           src={imageUrl}

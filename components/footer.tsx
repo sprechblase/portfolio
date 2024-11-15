@@ -2,21 +2,18 @@ import Link from "next/link";
 import { BorderBeam } from "./ui/border-beam";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import BlurFade from "./ui/blur-fade";
 import DotPattern from "./ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import { Button, buttonVariants } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 export function Footer() {
   const { theme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
-
-  useEffect(() => {
-    setColor(theme === "dark" ? "#fff" : "#030303");
-  }, [theme]);
+  const router = useRouter();
 
   return (
-    <BlurFade delay={0.1 * 6} yOffset={0} inView>
+    <BlurFade delay={0.1 * 5} yOffset={0} inView>
       <div
         className="flex flex-col justify-center antialiased overflow-hidden relative border border-dark-300 rounded-xl mb-5 z-50"
         id="footer"
@@ -34,7 +31,16 @@ export function Footer() {
           </h1>
         </div>
 
-        <div className="p-8 pt-6 flex flex-col md:flex-row justify-end gap-8 md:gap-0">
+        <div className="p-10 pt-6 flex flex-col md:flex-row justify-between">
+          <div className="flex flex-col mt-auto">
+            <Button
+              onClick={() => router.back()}
+              className={buttonVariants({ variant: "secondary" })}
+              disabled
+            >
+              Login
+            </Button>
+          </div>
           <div className="space-y-2">
             <h3 className="text-4xl font-bold relative z-10">
               Samuel <br /> Krebs.
@@ -48,8 +54,8 @@ export function Footer() {
           size={250}
           duration={20}
           delay={15}
-          colorFrom={color}
-          colorTo={color}
+          colorFrom={theme === "dark" ? "#fff" : "#000"}
+          colorTo={theme === "dark" ? "#fff" : "#000"}
         />
         <DotPattern
           width={30}

@@ -3,6 +3,7 @@
 import { MainDock } from "@/components/dock";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
+import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
 
 export default function Home() {
@@ -11,10 +12,13 @@ export default function Home() {
       <div className="max-w-8xl mx-auto w-full">
         <MainDock />
         <Hero />
-        <div className="mt-20 max-w-6xl mx-auto w-full">
+        <div className="mt-28 max-w-6xl mx-auto w-full">
           <Skills />
         </div>
-        <div className="mt-20 max-w-7xl mx-auto w-full">
+        <div className="mt-28 max-w-6xl mx-auto w-full">
+          <Projects />
+        </div>
+        <div className="mt-28 max-w-7xl mx-auto w-full">
           <Footer />
         </div>
       </div>

@@ -4,16 +4,10 @@ import BlurFade from "./ui/blur-fade";
 import Particles from "./ui/particles";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import { Spotlight } from "./ui/spotlight";
 
 export function Hero() {
   const { theme } = useTheme();
-  const [color, setColor] = useState("#ffffff");
-
-  useEffect(() => {
-    setColor(theme === "dark" ? "#fff" : "#030303");
-  }, [theme]);
 
   return (
     <section id="hero">
@@ -23,7 +17,7 @@ export function Hero() {
           className="absolute inset-0"
           quantity={120}
           ease={80}
-          color={color}
+          color={theme === "dark" ? "#fff" : "#000"}
           refresh
         />
         <BlurFade delay={0.1 * 3} yOffset={-6} inView>
