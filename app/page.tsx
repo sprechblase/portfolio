@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <section className="min-h-screen flex items-center justify-center py-12">
       <MacOSWindow title="skre/dev Portfolio" className="w-full max-w-4xl">
-        <h1 className="title text-5xl">hi i'm samuel</h1>
+        <h1 className="title text-5xl">hi i&apos;m samuel</h1>
         <p className="mt-4 font-light">
           {new Date().getFullYear() -
             2005 -
