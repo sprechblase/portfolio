@@ -18,7 +18,7 @@ import Link from "next/link";
 import { Projects } from "@/components/Projects";
 import { TechStack } from "@/components/TechStack";
 import Timeline from "@/components/Timeline";
-import { Experiences } from "@/components/Experiences";
+/* import { Experiences } from "@/components/Experiences"; */
 
 export default function Home() {
   return (
