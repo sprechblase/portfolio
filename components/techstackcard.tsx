@@ -1,31 +1,26 @@
 import Image from "next/image";
-import { FC } from "react";
 
-interface TechStackCardProp {
+interface TechStackCardProps {
   name: string;
   imageUrl: string;
   bgColor: string;
 }
 
-export const TechStackCard: FC<TechStackCardProp> = ({
-  name,
-  imageUrl,
-  bgColor,
-}) => {
+export function TechStackCard({ name, imageUrl, bgColor }: TechStackCardProps) {
   return (
-    <div className="flex flex-1 gap-5 p-3 rounded-xl border border-[#FAFAFA] bg-[#FAFAFA] hover:bg-[#F2F2F2] dark:border-[#1a1a1a] dark:bg-[#0b0b0c] dark:hover:bg-[#0e0e0f] transition-colors duration-200">
-      <div className={`p-3 ${bgColor} rounded-xl w-fit`}>
+    <div className="flex flex-1 gap-5 p-3 rounded-lg border bg-card">
+      <div className={`p-3 ${bgColor} rounded-lg w-fit`}>
         <Image
           src={imageUrl}
-          width={1000}
-          height={1000}
+          width={500}
+          height={500}
           alt={`${name} logo`}
-          className={"size-8"}
+          className={"size-6"}
         />
       </div>
       <div>
-        <h4 className="py-3 text-lg font-medium">{name}</h4>
+        <h4 className="py-3 text-md font-medium">{name}</h4>
       </div>
     </div>
   );
-};
+}
