@@ -43,6 +43,7 @@ export function Projects() {
               <Badge variant="secondary">TailwindCSS</Badge>
               <Badge variant="secondary">Next.js</Badge>
               <Badge variant="secondary">React</Badge>
+              <Badge variant="secondary">npm</Badge>
               <Badge variant="secondary">MDX</Badge>
             </div>
             <div className="flex gap-2 w-full">
