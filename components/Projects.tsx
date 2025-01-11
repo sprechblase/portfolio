@@ -39,12 +39,12 @@ export function Projects() {
           </CardContent>
           <CardFooter className="flex flex-col gap-4">
             <div className="flex flex-wrap gap-1">
-              <Badge variant="secondary">TypeScript</Badge>
-              <Badge variant="secondary">TailwindCSS</Badge>
-              <Badge variant="secondary">Next.js</Badge>
-              <Badge variant="secondary">React</Badge>
-              <Badge variant="secondary">npm</Badge>
-              <Badge variant="secondary">MDX</Badge>
+              <Badge variant="outline">TypeScript</Badge>
+              <Badge variant="outline">TailwindCSS</Badge>
+              <Badge variant="outline">Next.js</Badge>
+              <Badge variant="outline">React</Badge>
+              <Badge variant="outline">npm</Badge>
+              <Badge variant="outline">MDX</Badge>
             </div>
             <div className="flex gap-2 w-full">
               <Link href="https://docsframe.work" className="flex-1">
@@ -88,9 +88,9 @@ export function Projects() {
           </CardContent>
           <CardFooter className="flex flex-col gap-4">
             <div className="flex flex-wrap gap-1">
-              <Badge variant="secondary">HTML</Badge>
-              <Badge variant="secondary">CSS</Badge>
-              <Badge variant="secondary">JavaScript</Badge>
+              <Badge variant="outline">HTML</Badge>
+              <Badge variant="outline">CSS</Badge>
+              <Badge variant="outline">JavaScript</Badge>
             </div>
             <div className="flex gap-2 w-full justify-end">
               <Link href="https://reviewificator.skre.dev" className="flex-1">
