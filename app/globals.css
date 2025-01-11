@@ -71,11 +71,17 @@ body {
 @layer base {
   * {
     @apply border-border;
+    font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   }
   body {
     @apply bg-background text-foreground;
   }
   .title {
-    @apply font-serif text-5xl tracking-wide decoration-border/75 decoration-2;
+    @apply text-5xl tracking-wide decoration-border/75 decoration-2;
+    font-family: var(--font-serif), Georgia, serif;
+  }
+  .title-2 {
+    @apply text-3xl decoration-border/75 decoration-2;
+    font-family: var(--font-serif), Georgia, serif;
   }
 }

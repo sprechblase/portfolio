@@ -3,7 +3,7 @@ import { TechStackCard } from "./TechStackCard";
 export function TechStack() {
   return (
     <section className="pt-10">
-      <h1 className="title text-3xl pb-6">current tech-stack</h1>
+      <h1 className="title-2 pb-6">current tech-stack</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-4">
         <TechStackCard
           name="TypeScript"

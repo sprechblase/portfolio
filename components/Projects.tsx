@@ -15,7 +15,7 @@ import Link from "next/link";
 export function Projects() {
   return (
     <section className="pt-8">
-      <h1 className="title text-3xl pb-6">my projects</h1>
+      <h1 className="title-2 pb-6">my projects</h1>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <Card className="max-w-[300px] flex flex-col">
           <CardHeader>

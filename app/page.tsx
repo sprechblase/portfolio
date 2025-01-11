@@ -31,7 +31,7 @@ export default function Home() {
             (new Date() < new Date(new Date().getFullYear(), 11, 22) ? 1 : 0)}
           -year-old soon-to-be computer science student from Germany 🇩🇪
         </p>
-        <div className="flex gap-6 pt-4">
+        <div className="flex gap-6 pt-4 pb-4">
           <a
             href="https://x.com/skredev"
             className="text-muted-foreground hover:text-foreground"
