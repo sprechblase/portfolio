@@ -39,7 +39,7 @@ export default function Home() {
             <Twitter aria-hidden="true" className="size-5" />
           </a>
           <a
-            href="https://github.com/skredev"
+            href="https://github.com/sprechblase"
             className="text-muted-foreground hover:text-foreground"
           >
             <Github aria-hidden="true" className="size-5" />

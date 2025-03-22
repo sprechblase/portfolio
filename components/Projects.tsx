@@ -54,7 +54,7 @@ export function Projects() {
                 </Button>
               </Link>
               <Link
-                href="https://github.com/skredev/docsframe"
+                href="https://github.com/sprechblase/docsframe"
                 className="flex-1"
               >
                 <Button size="sm" className="w-full">
@@ -100,7 +100,7 @@ export function Projects() {
                 </Button>
               </Link>
               <Link
-                href="https://github.com/skredev/reviewificator"
+                href="https://github.com/sprechblase/reviewificator"
                 className="flex-1"
               >
                 <Button size="sm" className="w-full">
