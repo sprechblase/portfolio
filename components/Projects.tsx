@@ -17,7 +17,7 @@ export function Projects() {
     <section className="pt-8">
       <h1 className="title-2 pb-6">my projects</h1>
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <Card className="max-w-[300px] flex flex-col">
+        <Card className="flex flex-col">
           <CardHeader>
             <Link href="https://docsframe.work">
               <Image
@@ -26,7 +26,7 @@ export function Projects() {
                 quality={90}
                 width={500}
                 height={300}
-                className="h-36 w-full object-cover object-top border rounded-sm"
+                className="h-36 w-full object-cover object-center border rounded-sm"
               />
             </Link>
           </CardHeader>
@@ -66,7 +66,7 @@ export function Projects() {
           </CardFooter>
         </Card>
 
-        <Card className="max-w-[300px] flex flex-col">
+        <Card className="flex flex-col">
           <CardHeader>
             <Link href="https://reviewificator.skre.dev">
               <Image
@@ -75,7 +75,7 @@ export function Projects() {
                 quality={90}
                 width={500}
                 height={300}
-                className="h-36 w-full object-cover object-top border rounded-sm"
+                className="h-36 w-full object-cover object-center border rounded-sm"
               />
             </Link>
           </CardHeader>
