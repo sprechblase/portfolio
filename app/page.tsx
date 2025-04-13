@@ -24,35 +24,48 @@ export default function Home() {
   return (
     <section className="min-h-screen flex items-center justify-center py-12">
       <MacOSWindow title="skre/dev Portfolio" className="w-full max-w-4xl">
-        <h1 className="title text-5xl">hi i&apos;m samuel</h1>
-        <p className="mt-4 font-light">
-          {new Date().getFullYear() -
-            2005 -
-            (new Date() < new Date(new Date().getFullYear(), 11, 22) ? 1 : 0)}
-          -year-old soon-to-be computer science student from Germany 🇩🇪
-        </p>
-        <div className="flex gap-6 pt-4 pb-4">
-          <a
-            href="https://x.com/skredev"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            <Twitter aria-hidden="true" className="size-5" />
-          </a>
-          <a
-            href="https://github.com/sprechblase"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            <Github aria-hidden="true" className="size-5" />
-          </a>
-          <a
-            href="mailto:hi@skre.dev"
-            className="text-muted-foreground hover:text-foreground"
-          >
-            <Mail aria-hidden="true" className="size-5" />
-          </a>
+        <div className="flex items-start justify-between gap-6">
+          <div className="flex-1">
+            <h1 className="title text-5xl">hi i&apos;m samuel</h1>
+            <p className="mt-4 font-light">
+              {new Date().getFullYear() -
+                2005 -
+                (new Date() < new Date(new Date().getFullYear(), 11, 22) ? 1 : 0)}
+              -year-old soon-to-be computer science student from Germany
+            </p>
+            <div className="flex gap-6 pt-4 pb-4">
+              <a
+                href="https://x.com/skredev"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <Twitter aria-hidden="true" className="size-5" />
+              </a>
+              <a
+                href="https://github.com/sprechblase"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <Github aria-hidden="true" className="size-5" />
+              </a>
+              <a
+                href="mailto:hi@skre.dev"
+                className="text-muted-foreground hover:text-foreground"
+              >
+                <Mail aria-hidden="true" className="size-5" />
+              </a>
+            </div>
+          </div>
+          <div className="relative size-28 rounded-full overflow-hidden flex-shrink-0 border">
+            <Image
+              src="https://avatars.githubusercontent.com/u/60067101?v=4"
+              alt="profile picture"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
 
-        {/* <Experiences /> */}
+{/*         <Experiences /> */}
 
         <TechStack />
 
